@@ -1,0 +1,180 @@
+@font-face {
+        font-family: WorkSans-Bold;
+        src: url(../fonts/static/WorkSans-Bold.ttf);
+        font-weight: 400, 600, 700;
+
+        font-family: WorkSans-Regular;
+        src: url(../fonts/static/WorkSans-Regular.ttf);
+        font-weight: 400, 600, 700;
+    }
+
+
+html {
+    font-size: 62.5%;
+    background-color: hsl(275, 100%, 97%);
+    
+}
+
+body{
+    height: 900px;
+    background-color: aqua;
+}
+main {
+    background: url('../images/background-pattern-desktop.svg') no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    font-family: WorkSans-Bold;
+}
+
+.container {
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin-top: 8%; */
+    position: relative;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 5.5rem;
+    font-family: WorkSans-Bold;
+
+    margin: 6% 6%;
+}
+
+.accordion-header{
+    width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 600;
+    /* text-wrap: balance; */
+    color: hsl(292, 42%, 14%);
+    border: none;
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+    cursor: pointer;
+    padding: 1.5rem  0;
+    margin-left: 20px;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.accordion-header:hover{
+    color: hsl(292, 16%, 49%);
+}
+  
+  
+  /* Estilo normal do corpo */
+.accordion-body {
+    /* display: none; */
+    padding: 0 10px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    max-height: 0;
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+    border-top: none;
+    transition: max-height 0.3s ease; /* Suave ao abrir/fechar */
+    
+    transition: all 0.5s ease;
+    font-family: WorkSans-Regular;
+    color: hsl(300, 1%, 78%);
+    font-size: 1.6rem;
+    margin: 20px 0;
+    font-weight: 400;
+    margin-left: 20px;
+  }
+
+ 
+  
+  /* Estilo do corpo ativo */
+  .accordion-body.active {
+    /* display: block; */
+    max-height: 200px; /* Define uma altura máxima ao exibir */
+    padding: 10px;
+    background-color: #ffffff; /* Azul claro */
+   
+  }
+  
+  .button-abrir{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(292, 16%, 49%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; 
+    
+    
+}
+
+/* 
+.container .containt-accordion {
+    padding: 0 6%;
+}
+
+.container .containt-accordion .accordion .accordion-header{
+    width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+    cursor: pointer;
+    padding: 1.5rem  0;
+    background: none;
+    display: flex;
+    gap: 10px;
+}
+
+.container .containt-accordion .accordion .accordion-header:hover{
+    color: hsl(292, 16%, 49%);
+}
+
+.container .containt-accordion .accordion .accordion-header .button-abrir{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(292, 16%, 49%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; 
+    
+    
+}
+
+
+.container .containt-accordion .accordion-body p {
+    font-family: WorkSans-Regular;
+    color: hsl(300, 1%, 78%);
+    font-size: 1.6rem;
+    margin: 20px 0;
+    font-weight: 400;
+    
+}
+
+.container .containt-accordion .accordion-body {
+    display: none;
+} */
+
+
+.attribution { font-size: 11px; text-align: center; display: none; }
+.attribution a { color: hsl(228, 45%, 44%); }

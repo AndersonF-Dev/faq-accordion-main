@@ -1,0 +1,51 @@
+
+@media (max-width: 1024px){
+    .container{
+        margin-top: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        margin-top: 45%;
+    }
+}
+
+
+@media (max-width: 480px){
+    body{
+        height: 1000px;
+    }
+
+    main{
+        background: url('../images/background-pattern-desktop.svg') no-repeat;
+        /* height: 600px; */
+        
+    }
+   .container {
+        width: 300px;
+        /* margin-top: 40%; */
+        position: absolute;
+        /* z-index: 1; */
+        
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .title img {
+        width: 30px;
+    }
+    .accordion-header{
+        width: 270px;
+        font-size: 1.4rem;
+        gap: 2;
+        overflow: hidden;
+       
+    }
+    .accordion-header p{
+        width: 235px;
+    }
+    .abrir-posicao{
+        /* margin-right: 50px; */
+    }
+}

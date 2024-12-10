@@ -1,32 +1,50 @@
 
 
+/*jslint es6, browser */
 
-// Seleciona todos os cabeçalhos do acordeão
-const headers = document.querySelectorAll('.accordion-header');
+const acordeonTriggers = document.querySelectorAll('.acordion .trigger');
+// const acordeon = document.querySelector('.acordion');
+// const trigger = document.querySelectorAll('.trigger');
 
-// Adiciona o evento de clique a cada cabeçalho
-headers.forEach((header) => {
-  header.addEventListener('click', () => {
-    // Seleciona o corpo do acordeão relacionado
-    const body = header.nextElementSibling;
+acordeonTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+        const acordeon = trigger.parentElement;
+        const isOpen = acordeon.classList.contains('open');
 
-    // Alterna a visibilidade do corpo do acordeão
-    body.classList.toggle('active');
-
-    // Seleciona o .button-abrir dentro do cabeçalho
-    const botaoAbrir = header.querySelector('.button-abrir');
-
-    // Alterna a cor do botão
-    if (botaoAbrir.textContent === '+') {
-      botaoAbrir.textContent = '-'; // Muda o texto para '-'
-      botaoAbrir.style.background = 'hsl(292, 42%, 14%)'; // Cor escura
-    } else {
-      botaoAbrir.textContent = '+'; // Muda o texto para '+'
-      botaoAbrir.style.color = '#fff'; // Cor padrão
-      botaoAbrir.style.background = 'hsl(292, 16%, 49%)'; // Cor escura
-    }
-  });
+        if  (isOpen ) {
+            acordeon.classList.remove('open');
+        } else {
+            acordeon.classList.add('open');
+        }
+    });
 });
+
+// // Seleciona todos os cabeçalhos do acordeão
+// const headers = document.querySelectorAll('.accordion-header');
+
+// // Adiciona o evento de clique a cada cabeçalho
+// headers.forEach((header) => {
+//   header.addEventListener('click', () => {
+//     // Seleciona o corpo do acordeão relacionado
+//     const body = header.nextElementSibling;
+
+//     // Alterna a visibilidade do corpo do acordeão
+//     body.classList.toggle('active');
+
+//     // Seleciona o .button-abrir dentro do cabeçalho
+//     const botaoAbrir = header.querySelector('.button-abrir');
+
+//     // Alterna a cor do botão
+//     if (botaoAbrir.textContent === '+') {
+//       botaoAbrir.textContent = '-'; // Muda o texto para '-'
+//       botaoAbrir.style.background = 'hsl(292, 42%, 14%)'; // Cor escura
+//     } else {
+//       botaoAbrir.textContent = '+'; // Muda o texto para '+'
+//       botaoAbrir.style.color = '#fff'; // Cor padrão
+//       botaoAbrir.style.background = 'hsl(292, 16%, 49%)'; // Cor escura
+//     }
+//   });
+// });
 
 
 

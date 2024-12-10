@@ -1,42 +1,176 @@
-@font-face {
-        font-family: WorkSans-Bold;
-        src: url(../fonts/static/WorkSans-Bold.ttf);
-        font-weight: 400, 600, 700;
-
-        font-family: WorkSans-Regular;
-        src: url(../fonts/static/WorkSans-Regular.ttf);
-        font-weight: 400, 600, 700;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 html {
     font-size: 62.5%;
-    background-color: hsl(275, 100%, 97%);
+    background-color: hsl(276, 20%, 62%);
+
+    /* width: 100%;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: center; */
     
 }
 
 body{
-    height: 900px;
-    background-color: aqua;
+    
 }
-main {
+main{
+    width: 100%;
+    
     background: url('../images/background-pattern-desktop.svg') no-repeat;
+    background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 900px;
-    font-family: WorkSans-Bold;
+    font-family: "Work Sans", sans-serif;
+    
+    
 }
 
-.container {
-    /* display: grid;
-    grid-template-columns: 1fr; */
-    background-color: hsl(0, 0%, 100%);
+.corpo{grid-area: corpo;}
+.content{
+    display: grid;
+    grid-template-areas: "corpo";
+    grid-template-columns: 1fr;
+    min-width: 560px;
+    margin-top: 10%;
+    background-color: blue;
+    overflow: hidden;
+}
+.corpo{
+    width: 55rem;
+    background-color:  hsl(275, 100%, 97%);
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    margin: 5%;
+
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 1rem;
+    margin-top: 6%;
+    padding: 1rem;
+    margin: 0.5rem;
+    color: #ffffff;
+}
+
+
+.header {
+    /* display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 3%; */
+    /* background-color: aqua; */
+    
+}
+.photo {
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    margin-top: 5% 0;
+    border: 2px solid #ffffff;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+
+    font-size: 3.6rem;
+    text-align: center;
+    color: hsl(292, 42%, 14%);
+    font-weight: bold;
+    font-family: "Work Sans", sans-serif;
+
+    
+}
+
+.informations {
+    text-align: center;
+    font-size: 0.9rem;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.informations li {
+    width: 110%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+   
+}
+.informations li img {
+    width: 0.7rem;
+}
+
+a{
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 700px) {
+    .content{
+        /* width: 100px; */
+    }
+
+    .header{
+        flex-direction: row;
+    }
+
+    .photo {
+        width: 10.375rem;
+        height: 10.375rem;
+        border-radius: 50%;
+        margin-top: 5%;
+    }
+    .title{
+        margin-top: 12%;
+        text-align: left;
+    }
+
+    .informations{
+        align-items: start;
+    }
+    
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+    
+    background-color: hsl(0, 83%, 53%);
     width: 600px;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; */
     /* margin-top: 8%; */
-    position: relative;
+    /* position: relative;
 }
 
 .title {
@@ -54,9 +188,9 @@ main {
     width: 100%;
     text-align: left;
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 600; */
     /* text-wrap: balance; */
-    color: hsl(292, 42%, 14%);
+    /* color: hsl(292, 42%, 14%);
     border: none;
     border-bottom: 1px solid hsl(275, 100%, 97%);
     cursor: pointer;
@@ -72,11 +206,11 @@ main {
 .accordion-header:hover{
     color: hsl(292, 16%, 49%);
 }
+   */
   
-  
-  /* Estilo normal do corpo */
+  /* Estilo normal do corpo 
 .accordion-body {
-    /* display: none; */
+    
     padding: 0 10px;
     top: 100%;
     left: 0;
@@ -84,9 +218,9 @@ main {
     z-index: 1;
 
     max-height: 0;
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa 
     border-top: none;
-    transition: max-height 0.3s ease; /* Suave ao abrir/fechar */
+    transition: max-height 0.3s ease; /* Suave ao abrir/fechar 
     
     transition: all 0.5s ease;
     font-family: WorkSans-Regular;
@@ -100,11 +234,11 @@ main {
  
   
   /* Estilo do corpo ativo */
-  .accordion-body.active {
+  /* .accordion-body.active { */
     /* display: block; */
-    max-height: 200px; /* Define uma altura máxima ao exibir */
-    padding: 10px;
-    background-color: #ffffff; /* Azul claro */
+    /* max-height: 200px; /* Define uma altura máxima ao exibir 
+    padding: 10px; */
+    /* background-color: #ffffff; /* Azul claro 
    
   }
   
@@ -121,7 +255,7 @@ main {
     border: none; 
     
     
-}
+} */
 
 /* 
 .container .containt-accordion {

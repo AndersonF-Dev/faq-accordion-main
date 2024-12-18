@@ -11,7 +11,7 @@ Esta é uma solução para o [FAQ accordion challenge no Frontend Mentor](https:
 ### Link
 
 
-- URL do site ativo: [link aqui](https://andersonf-dev.github.io/interactive-rating-component-main/)
+- URL do site ativo: [link aqui](https://)
 
 # Trecho de código usado js
 ```js
@@ -37,9 +37,6 @@ acordeonTriggers.forEach((trigger) => {
 - Marcação HTML5 semântica
 - Propriedades personalizadas CSS
 - JavaScript
-
-
-
 
 ### O que aprendi
 

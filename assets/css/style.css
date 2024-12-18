@@ -4,13 +4,6 @@
 html {
     font-size: 62.5%;
     background-color: hsl(276, 20%, 62%);
-
-    /* width: 100%;
-    height: 100vh;
-    display: flex;
-    
-    justify-content: center; */
-    
 }
 
 body{
@@ -36,7 +29,7 @@ main{
     grid-template-columns: 1fr;
     min-width: 560px;
     margin-top: 10%;
-    background-color: blue;
+
     overflow: hidden;
 }
 .corpo{
@@ -56,17 +49,6 @@ main{
     color: #ffffff;
 }
 
-
-.header {
-    /* display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 3%; */
-    /* background-color: aqua; */
-    
-}
 .photo {
     width: 9.375rem;
     height: 9.375rem;

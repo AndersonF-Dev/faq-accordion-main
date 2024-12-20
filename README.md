@@ -11,7 +11,7 @@ Esta é uma solução para o [FAQ accordion challenge no Frontend Mentor](https:
 ### Link
 
 
-- URL do site ativo: [link aqui](https://)
+- URL do site ativo: [link aqui](https://andersonf-dev.github.io/faq-accordion-main/)
 
 # Trecho de código usado js
 ```js
